@@ -1,7 +1,7 @@
 ## NFL Statistics Webpage.
 
 
-## Name(s)
+## Name
 
 Jaymon Pysnack
 

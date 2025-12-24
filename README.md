@@ -16,6 +16,3 @@ I have to manually update this.
 - The user can search players by name, and any that have the typed string of characters in their name show up
 - The user can sort players by specific stats, and the leaders, as well as the stat itself, show up.
 - Users can compare as many players as they want by pressing the "compare" button, and then selecting the "compare" tab at the top
-# NFL-Statistics
-# NFL-Statistics
-# NFL-Statistics

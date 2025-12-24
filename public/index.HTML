@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NFL Player Stats</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+
+<body>
+  <header class="bg-blue-800 text-white text-center p-5 text-3xl font-bold">NFL Player Statistics</header>
+  
+
+  <div class="flex justify-center gap-3 mt-4">
+
+    <button id="playersTab" class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600">Players</button>
+    <button id="compareTab" class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600">Compare</button>
+    
+  </div>
+
+    <section id="players">
+      <div class="flex gap-2 p-5">
+          <input id="searchInput" type="text" placeholder="Search players..." />
+      
+          <select id="positionFilter">
+            <option value="">All Positions</option>
+            <option value="QB">QB</option>
+            <option value="RB">RB</option>
+            <option value="WR">WR</option>
+            <option value="TE">TE</option>
+          </select>
+
+          <select id="statsFilter">
+            <option>Sort By</option>
+            <option>Passing Yards</option>
+            <option>Passing Touchdowns</option>
+            <option>Rushing Yards</option>
+            <option>Rushing Touchdowns</option>
+            <option>Receiving Yards</option>
+            <option>Receiving Touchdowns</option>
+            <option>Interceptions Thrown</option>
+            <option>Fumbles</option>
+          </select>
+        </div>
+      
+        <div id="playerCardModel" class="player-card hidden bg-white p-4 rounded-xl shadow-md">
+
+            <h2 class="player-name"></h2>
+            <p class="player-data"></p>
+            <p class="player-stats"></p>
+            <button class="compare-button mt-2 px-3 py-1 rounded-md bg-blue-600 text-white">Compare</button>
+          </div>
+      
+          <div id="playerList" class="grid grid-cols-5 gap-4 p-5"></div>
+
+      
+  </section>
+
+  <section id="compare" class="page-section hidden">
+    <h2>Compare Players</h2>
+
+    <div id="compareCardModel" class="compare-card hidden bg-white p-4 rounded-xl shadow-md">
+
+      <h3 class="compare-name"></h3>
+      <p class="compare-data"></p>
+      <p class="compare-yds"></p>
+      <p class="compare-td"></p>
+      <button class="remove-button mt-2 px-3 py-1 rounded-md bg-red-600 text-white">Remove</button>
+      
+    </div>
+
+    <div id="compareList" class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4 p-5"></div>
+
+  </section>
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
